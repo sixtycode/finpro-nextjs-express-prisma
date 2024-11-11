@@ -10,6 +10,18 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Transaction {
+model EventDetail {
+  id Int @id @default(autoincrement())
+}
+
+model EventTransaction {
+  id Int @id @default(autoincrement())
+}
+
+model EventPromotion {
+  id Int @id @default(autoincrement())
+}
+
+model EventRating {
   id Int @id @default(autoincrement())
 }

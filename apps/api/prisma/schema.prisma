@@ -25,3 +25,7 @@ model EventPromotion {
 model EventRating {
   id Int @id @default(autoincrement())
 }
+
+model PrizePoint {
+  id Int @id @default(autoincrement())
+}

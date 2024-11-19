@@ -18,7 +18,7 @@ enum EventType {
 model EventDetail {
   id Int @id @default(autoincrement())
   title String @db.VarChar(75)
-  summary @db.VarChar(140)
+  summary String @db.VarChar(140)
   type EventType @default(SINGLE)
 }
 

@@ -26,6 +26,7 @@ export default function Profile() {
               READY!
             </Link>
           </div>
+          <h1>Referral Points</h1>
         </div>
       </main>
     </>

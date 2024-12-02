@@ -84,7 +84,7 @@ export default function FormRegister() {
           SIGN UP
         </button>
       </form>
-      <div className="mt-4">
+      <div className="mt-4 text-xl font-bold leading-tight tracking-tight md:text-2xl">
         have an account?{' '}
         <Link
           href="/login"

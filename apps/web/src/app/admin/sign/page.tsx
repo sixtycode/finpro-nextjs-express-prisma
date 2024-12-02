@@ -40,7 +40,7 @@ export default function Sign() {
                 type="submit"
                 className="mx-auto flex items-center rounded-lg border-2 border-slate-600 px-5 py-2.5 text-sm font-bold dark:border-white"
               >
-                LOGIN
+                <Link href="/admin">LOGIN</Link>
               </button>
             </form>
           </div>

@@ -9,25 +9,47 @@ export const metadata: Metadata = {
 export default function Admin() {
   return (
     <>
-      <main className="grid min-h-full place-items-center px-6 py-24 sm:py-32 lg:px-8">
-        <div className="text-center">
-          <p className="text-base font-semibold">Hello Fellas!</p>
-          <h1 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
-            Go Discover Event
-          </h1>
-          <p className="mt-6 text-base leading-7">
-            Refresh mind from terrific routines.
-          </p>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Link
-              className="flex h-10 items-center justify-center gap-2 rounded-full border border-solid bg-black px-4 text-sm text-white transition-colors hover:bg-[#383838] hover:text-white sm:h-12 sm:px-5 sm:text-base dark:bg-transparent dark:text-white dark:hover:bg-[#ccc] dark:hover:text-black"
-              href="/event"
-            >
-              READY!
-            </Link>
-          </div>
-        </div>
-      </main>
+      <div className="grid min-h-full place-items-center px-6 2xl:px-80">
+        <Link
+          href="/"
+          className="mb-4 w-full rounded-lg border-2 border-black py-3 text-center dark:border-white"
+        >
+          Sign Out
+        </Link>
+      </div>
+      <div className="grid min-h-full px-6 text-xl font-bold 2xl:px-80">
+        Payment Verification
+        <table className="mt-8 table-auto font-medium">
+          <thead>
+            <tr className="text-left">
+              <th>No.</th>
+              <th>Email</th>
+              <th>Full Name</th>
+              <th>Event ID</th>
+              <th>Evidence</th>
+              <th>Check</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>malcolmlockyer@gmail.com</td>
+              <td>Malcolm Lockyer</td>
+              <td>0003</td>
+              <td>IMG_0001.JPG</td>
+              <td>YES</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>theeagles@outlook.com</td>
+              <td>The Eagles</td>
+              <td>1972</td>
+              <td>IMG_0002.JPG</td>
+              <td>APPROVAL</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </>
   );
 }

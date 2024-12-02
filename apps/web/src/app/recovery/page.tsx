@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
+import ButtonRecovery from './buttonRecovery';
 
 export const metadata: Metadata = {
   title: 'Recovery Account',
@@ -26,13 +27,17 @@ export default function Recovery() {
                   placeholder="name@company.com"
                 ></input>
               </div>
-              <button
-                type="submit"
-                className="mx-auto flex items-center rounded-lg border-2 border-slate-600 px-5 py-2.5 text-sm font-bold dark:border-white"
-              >
-                SEND LOGIN LINK
-              </button>
+              <ButtonRecovery></ButtonRecovery>
             </form>
+            <div className="mt-4">
+              already back?{' '}
+              <Link
+                href="/login"
+                className="text-blue-600 underline underline-offset-4 hover:text-blue-800 dark:text-blue-100 dark:hover:text-blue-200"
+              >
+                Log in
+              </Link>
+            </div>
           </div>
         </div>
       </div>

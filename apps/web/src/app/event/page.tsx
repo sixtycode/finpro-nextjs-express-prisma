@@ -1,12 +1,14 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
+import { redirect } from 'next/navigation';
 
 export const metadata: Metadata = {
   title: 'Event Discoveries',
   description: 'Enjoy the Vibes',
 };
 
-export default function Event() {
+export default async function Event() {
+  redirect('/login');
   return (
     <>
       <main className="grid min-h-full place-items-center px-6 py-24 sm:py-32 lg:px-8">
